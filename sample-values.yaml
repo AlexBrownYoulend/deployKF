@@ -319,6 +319,7 @@ deploykf_core:
       ##
       tools:
 
+
         ## the default Kubeflow Pipelines configs for profiles
         ##
         kubeflowPipelines:
@@ -545,7 +546,7 @@ kubeflow_tools:
       jupyterWebApp:
         tag: v1.9.0
 
-      NotebookController:
+      notebookController:
         tag: v1.9.0
 
     enabled: true
@@ -633,6 +634,9 @@ kubeflow_tools:
   ## --------------------------------------
   poddefaults_webhook:
     enabled: true
+    images:
+      poddefaultsWebhook:
+        tag: v1.9.0
 
 
   ## --------------------------------------
@@ -640,6 +644,7 @@ kubeflow_tools:
   ## --------------------------------------
   tensorboards:
     enabled: true
+
 
 
   ## --------------------------------------
@@ -653,4 +658,6 @@ kubeflow_tools:
   ##                volumes
   ## --------------------------------------
   volumes:
-    enabled: true
+    images:
+      volumesWebApp:
+        tag: v1.9.0
