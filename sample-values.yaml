@@ -658,6 +658,7 @@ kubeflow_tools:
   ##                volumes
   ## --------------------------------------
   volumes:
+    enabled: true
     images:
       volumesWebApp:
         tag: v1.9.0
