@@ -540,6 +540,14 @@ kubeflow_tools:
   ##               notebooks
   ## --------------------------------------
   notebooks:
+
+    images:
+      jupyterWebApp:
+        tag: 1.9.0
+
+      NotebookController:
+        tag: 1.9.0
+
     enabled: true
 
     ## notebook spawner configs
