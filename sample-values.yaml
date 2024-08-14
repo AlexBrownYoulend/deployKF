@@ -543,10 +543,10 @@ kubeflow_tools:
 
     images:
       jupyterWebApp:
-        tag: 1.9.0
+        tag: v1.9.0
 
       NotebookController:
-        tag: 1.9.0
+        tag: v1.9.0
 
     enabled: true
 
