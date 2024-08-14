@@ -680,6 +680,13 @@ kubeflow_tools:
   ## --------------------------------------
   tensorboards:
     enabled: true
+    images:
+      tensorboardController:
+        tag: v1.9.0
+      tensorboardsWebApp:
+        tag: v1.9.0
+      kubeRbacProxy:
+        tag: v1.9.0
 
 
 
