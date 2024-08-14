@@ -257,6 +257,10 @@ kubeflow_tools:
   ## --------------------------------------
   notebooks:
 
+    images:
+      jupyterWebApp:
+        tag: 1.9.0
+
     ## notebook spawner configs
     ##  - https://www.deploykf.org/guides/tools/kubeflow-notebooks/
     ##
