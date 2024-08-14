@@ -875,9 +875,9 @@ deploykf_core:
       ##         - "WorkloadIdentity": manages GCP WorkloadIdentity for the profile namespace
       ##     - `spec`: a map of plugin-specific configurations
       ##         - spec for AwsIamForServiceAccount:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_iam.go#L30
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.9.0/components/profile-controller/controllers/plugin_iam.go#L30
       ##         - spec for WorkloadIdentity:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.9.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
       ##  - override these defaults for a specific profile by setting `plugins` in that profile,
       ##    to disable all plugins for that profile, set an empty list `[]`
       ##
@@ -1452,11 +1452,11 @@ kubeflow_tools:
     images:
       jupyterWebApp:
         repository: docker.io/kubeflownotebookswg/jupyter-web-app
-        tag: ~
+        tag: 1.9.0
 
       notebookController:
         repository: docker.io/kubeflownotebookswg/notebook-controller
-        tag: ~
+        tag: 1.9.0
 
     ## notebook spawner configs
     ##  - these configs directly become the `spawner_ui_config.yaml` in the jupyter-web-app
@@ -1730,7 +1730,7 @@ kubeflow_tools:
 
     ## notebook template override
     ##  - a ~string~ to replace the default jupyter-web-app `notebook_template.yaml` with
-    ##    https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/crud-web-apps/jupyter/backend/apps/common/yaml/notebook_template.yaml
+    ##    https://github.com/kubeflow/kubeflow/blob/v1.9.0/components/crud-web-apps/jupyter/backend/apps/common/yaml/notebook_template.yaml
     ##  - can include deployKF templates `{{< ... >}}`
     ##
     notebookTemplate: ""

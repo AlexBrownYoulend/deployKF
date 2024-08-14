@@ -299,9 +299,9 @@ deploykf_core:
       ##         - "WorkloadIdentity": manages GCP WorkloadIdentity for the profile namespace
       ##     - `spec`: a map of plugin-specific configurations
       ##         - spec for AwsIamForServiceAccount:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_iam.go#L30
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.9.0/components/profile-controller/controllers/plugin_iam.go#L30
       ##         - spec for WorkloadIdentity:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.9.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
       ##  - override these defaults for a specific profile by setting `plugins` in that profile,
       ##    to disable all plugins for that profile, set an empty list `[]`
       ##

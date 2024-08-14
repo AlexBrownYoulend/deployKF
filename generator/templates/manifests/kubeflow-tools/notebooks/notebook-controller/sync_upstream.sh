@@ -8,7 +8,7 @@ cd "$THIS_SCRIPT_PATH"
 # upstream configs
 UPSTREAM_REPO="github.com/kubeflow/manifests"
 UPSTREAM_PATH="apps/jupyter/notebook-controller/upstream/overlays/kubeflow"
-UPSTREAM_REF="14c0f9abe70c4d0ce3e021a5839a7cdd54dc572d" # v1.7.0
+UPSTREAM_REF="14c0f9abe70c4d0ce3e021a5839a7cdd54dc572d" # v1.9.0
 
 # output configs
 OUTPUT_PATH="./upstream"
